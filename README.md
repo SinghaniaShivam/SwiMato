@@ -1,101 +1,55 @@
-# Namaste React 🚀
+1. User Interaction and State Management:
+
+Handling form submissions:
+Use useState to manage form input values.
+Implement event handlers (e.g., onSubmit) to capture form data and trigger actions.
+Validate input data as needed.
+Updating component state:
+Use setState to modify component state and trigger re-renders.
+Consider using useEffect for side effects that depend on state changes.
+Managing user preferences:
+Store preferences using local storage or a backend API.
+Retrieve and apply preferences on component mount or when needed.
 
 
-# Parcel
-- Dev Build
-- Local Server
-- HMR = Hot Module Replacement
-- File Watching Algorithm - written in C++
-- Caching - Faster Builds
-- Image Optimization
-- Minification
-- Bundling
-- Compress
-- Consistent Hashing
-- Code Splitting
-- Differential Bundling - support older browsers
-- Diagnostic
-- Error Handling
-- HTTPs
-- Tree Shaking - remove unused code
-- Different dev and prod bundles
+2. Data Fetching and Display:
+
+Fetching data from APIs:
+Use useEffect to fetch data asynchronously.
+Handle potential errors and loading states.
+Store fetched data in component state for rendering.
+Displaying data dynamically:
+Use JSX to render data conditionally or in lists.
+Consider using libraries like React Router for dynamic routing based on data.
+Filtering data:
+Implement filtering and sorting logic using state and event handlers.
+Update the displayed data based on user input.
 
 
+3. Component Composition and Reusability:
 
-# Namaste Food
+Creating reusable components:
+Break down the UI into smaller, reusable components.
+Pass props to customize component behavior.
+Consider using state management libraries like Redux or Context API for complex data sharing.
+Composing components:
+Combine components to build more complex UI structures.
+Use props to pass data and control between components.
 
+4. Styling and Theming:
 
-/**
- * Header
- *  - Logo
- *  - Nav Items
- * Body
- *  - Search
- *  - RestaurantContainer
- *    - RestaurantCard
- *      - Img
- *      - Name of Res, Star Rating, cuisine, delery tie
- * Footer
- *  - Copyright
- *  - Links
- *  - Address
- *  - Contact
- */
+Applying styles:
+Use CSS or CSS-in-JS libraries (e.g., styled-components) to style components.
+Consider using a CSS framework like Bootstrap or Material-UI for pre-built components and styles.
+Create a theme to customize the appearance of your application.
+5. Additional Features:
 
-
-
- Two types of Export/Import
-
-
-- Default Export/Import
-
-export default Component;
-import Component from "path";
-
-
-- Named Export/Import
-
-export const Component;
-import {Component} from "path";
-
-
-# React Hooks
- (Normal JS utility functions)
-- useState() - Superpowerful State Variables in react
-- useEffect()
-
-
-
-#  2 types Routing in web apps
- - Client Side Routing
- - Server Side Routing
-
-
-
-
- # Redux Toolkit
-  - Install @reduxjs/toolkit and react-redux
-  - Build our store
-  - Connect our store to our app
-  - Slice (cartSlice)
-  - dispatch(action)
-  - Selector
-
-
-# Types of testing (devloper)
- - Unit Testing
- - Integration Testing
- - End to End Testing - e2e testing
-
-# Setting up Testing in our app
- - Install React Testing Library
- - Installed jest
- - Installed Babel dependencies
- - Configure Babel 
- - Configure Parcel Config file to disable default babel transpilation 
- - Jest  - npx jest --init
- - Install jsdom library
- - Install @babel/preset-react - to make JSX work in test cases
- - Include @babel/preset-react inside my babel config
- - npm i -D @testing-library/jest-dom
- # SwiMato
+Error handling and feedback:
+Provide clear error messages and feedback to the user.
+Use a loading indicator to indicate ongoing operations.
+Accessibility:
+Ensure your application is accessible to users with disabilities.
+Follow accessibility guidelines like WCAG.
+Performance optimization:
+Minimize unnecessary re-renders using techniques like memoization.
+Optimize image loading and other performance-critical aspects.
