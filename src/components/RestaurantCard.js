@@ -14,7 +14,7 @@ const RestaurantCard = (props) => {
     costForTwo,
     deliveryTime,
   } = resData;
-
+console.log(cloudinaryImageId);
   return (
     <div
       data-testid="resCard"
